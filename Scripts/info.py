@@ -1,4 +1,3 @@
-import os
 # [*]=================_Messages_=================[*]
 headermessage = """
  ██████╗ ███████╗ ██████╗██╗  ██╗███████╗ ██████╗██████╗ ██╗██████╗ ████████╗
@@ -8,6 +7,7 @@ headermessage = """
 ╚██████╔╝███████╗╚██████╗██║  ██╗███████║╚██████╗██║  ██║██║██║        ██║   
  ╚═════╝ ╚══════╝ ╚═════╝╚═╝  ╚═╝╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝        ╚═╝   
                     HackTheBox Made Easy By Dr-Gecko 2022
+         [!]  THIS IS A PROOF OF CONCEPT ONLY WORKS ON MEOW AND FAWN [!]
 """
 meowmessage = """
 Category: Starting Point
@@ -22,6 +22,3 @@ Box name: Fawn
 Difficulty: Very easy
 Tools required: FTP
 Tags: External, Penetration Tester Level 1, Enumeration, FTP"""
-# [*]=================_Functions_=================[*]
-def open_flag():
-    os.system("cat flag.txt")
