@@ -1,4 +1,3 @@
-Your_Username_Here = "Username Not Added"
 
 # [*]=================_Messages_=================[*]
 headermessage = """
@@ -17,12 +16,3 @@ Difficulty: Very easy
 Tools required: Telnet
 Tags: Telnet, Enumeration, External, Penetration Tester Level 1"""
 
-# [*]=================_Functions_=================[*]
-
-default = "Username Not Added"
-if Your_Username_Here == default:
-    unencoded = "ERR, USERNAME NOT ADDED. Check the README file for how to fix"
-else:
-    unencoded = "echo 'Pwned by " + Your_Username_Here + " with GeckScript!' >> flag.txt"
-Hacked_Message_As_Bytes = str.encode(unencoded)
-print(Hacked_Message_As_Bytes)
