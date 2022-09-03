@@ -1,4 +1,4 @@
-Your_Username_Here = "Dr-Gecko"
+Your_Username_Here = "Username Not Added"
 
 # [*]=================_Messages_=================[*]
 headermessage = """
@@ -21,7 +21,7 @@ Tags: Telnet, Enumeration, External, Penetration Tester Level 1"""
 
 default = "Username Not Added"
 if Your_Username_Here == default:
-    unencoded = "ERR, USERNAME NOT ADDED. Check GeckScript/README.MD for how to fix"
+    unencoded = "ERR, USERNAME NOT ADDED. Check the README file for how to fix"
 else:
     unencoded = "echo 'Pwned by " + Your_Username_Here + " with GeckScript!' >> flag.txt"
 Hacked_Message_As_Bytes = str.encode(unencoded)
